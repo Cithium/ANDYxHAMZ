@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android .widget.Button;
+import android.widget.EditText;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -21,15 +22,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button ida14Button = (Button) findViewById(R.id.ida14Button);
 
-        ida14Button.setOnClickListener( new Button.OnClickListener() {
+      Button IDA2 = (Button) findViewById(R.id.IDA2);
+
+       IDA2.setOnClickListener( new Button.OnClickListener() {
               public void onClick(View v){
-                  Intent intent = new Intent();
-                  intent.setAction(Intent.ACTION_VIEW);
-                  intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                  intent.setData(Uri.parse("http://cs.lth.se/edaa30/oevningsuppgifter/"));
-                  startActivity(intent);
+                  startActivity(new Intent(getApplicationContext(),SecondActivity.class));
               }
 
 
@@ -49,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });*/
     }
+
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
