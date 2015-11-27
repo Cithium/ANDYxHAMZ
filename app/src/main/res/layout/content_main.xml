@@ -11,13 +11,16 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.hamza.andyxhamz.MainActivity"
     tools:showIn="@layout/activity_main"
-    android:id="@+id/idaButton">
+    android:id="@+id/idaButton"
+    android:background="@drawable/background">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ida14Button"
-        android:layout_centerVertical="true"
+        android:text="@string/button_text"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="@string/button_text" />
+        android:layout_marginBottom="166dp" />
+
 </RelativeLayout>

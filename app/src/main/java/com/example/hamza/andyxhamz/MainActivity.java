@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                   Intent intent = new Intent();
                   intent.setAction(Intent.ACTION_VIEW);
                   intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                  intent.setData(Uri.parse("http://www.eit.lth.se/kurs/edt621"));
+                  intent.setData(Uri.parse("http://cs.lth.se/edaa30/oevningsuppgifter/"));
                   startActivity(intent);
               }
 
