@@ -30,23 +30,43 @@ public class JavaActivity extends AppCompatActivity {
 
         });
 
-
-
-        Button back = (Button) findViewById(R.id.back);
-        back.setOnClickListener(new Button.OnClickListener() {
+        Button seminarier = (Button) findViewById(R.id.seminarier);
+        seminarier.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), SecondActivity.class));
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("http://cs.lth.se/edaa30/seminarier/"));
+                startActivity(intent);
             }
+
 
         });
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+        Button labb = (Button) findViewById(R.id.labb);
+        labb.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("http://cs.lth.se/edaa30/laborationer/"));
+                startActivity(intent);
             }
+
+
+        });
+
+        Button extentor = (Button) findViewById(R.id.extentor);
+        extentor.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("http://cs.lth.se/edaa30/extentor/"));
+                startActivity(intent);
+            }
+
+
         });
     }
 
