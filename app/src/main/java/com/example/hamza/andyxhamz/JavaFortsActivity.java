@@ -10,47 +10,57 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-public class JavaActivity extends AppCompatActivity {
+public class JavaFortsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_java);
+        setContentView(R.layout.activity_java_forts);
 
+        Button ovningar = (Button) findViewById(R.id.javafovningar);
+        ovningar.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("http://cs.lth.se/edaa30/oevningsuppgifter/"));
+                startActivity(intent);
+            }
+        });
 
-        Button seminarier = (Button) findViewById(R.id.javagforelasningar);
+        Button seminarier = (Button) findViewById(R.id.javafseminarier);
         seminarier.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
                 intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse("http://cs.lth.se/edaa10/foerelaesningar/"));
+                intent.setData(Uri.parse("http://cs.lth.se/edaa30/seminarier/"));
                 startActivity(intent);
             }
 
 
         });
 
-        Button labb = (Button) findViewById(R.id.javaginlamningar);
+        Button labb = (Button) findViewById(R.id.javaflabb);
         labb.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
                 intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse("http://cs.lth.se/edaa10/inlaemningsuppgifter/"));
+                intent.setData(Uri.parse("http://cs.lth.se/edaa30/laborationer/"));
                 startActivity(intent);
             }
 
 
         });
 
-        Button extentor = (Button) findViewById(R.id.javagextentor);
+        Button extentor = (Button) findViewById(R.id.javafextentor);
         extentor.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
                 intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse("http://cs.lth.se/edaa10/tentamen/"));
+                intent.setData(Uri.parse("http://cs.lth.se/edaa30/extentor/"));
                 startActivity(intent);
             }
 

@@ -23,16 +23,37 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-      Button IDA2 = (Button) findViewById(R.id.IDA2);
-
-       IDA2.setOnClickListener( new Button.OnClickListener() {
-              public void onClick(View v){
-                  startActivity(new Intent(getApplicationContext(),SecondActivity.class));
-              }
-
-
-
+        Button javaGButton = (Button) findViewById(R.id.javaGrund);
+        javaGButton.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), JavaActivity.class));
+            }
         });
+
+        Button javaFButton = (Button) findViewById(R.id.javaForts);
+        javaFButton.setOnClickListener( new Button.OnClickListener() {
+            public void onClick(View v){
+                startActivity(new Intent(getApplicationContext(),JavaFortsActivity.class));
+            }
+        });
+
+        Button cPPButton = (Button) findViewById(R.id.cpp);
+        cPPButton.setOnClickListener( new Button.OnClickListener() {
+            public void onClick(View v){
+                startActivity(new Intent(getApplicationContext(),CPPActivity.class));
+            }
+        });
+
+
+        Button dbButton = (Button) findViewById(R.id.databas);
+        dbButton.setOnClickListener( new Button.OnClickListener() {
+            public void onClick(View v){
+                startActivity(new Intent(getApplicationContext(),DatabasActivity.class));
+            }
+        });
+
+
+
 
     }
 

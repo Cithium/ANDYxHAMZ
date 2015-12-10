@@ -10,7 +10,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:label="Derp"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,13 +19,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SecondActivity"
-            android:label="@string/title_activity_second"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".JavaActivity"
             android:label="@string/title_activity_java"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".JavaFortsActivity"
+            android:label="@string/title_activity_java_forts"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CPPActivity"
+            android:label="@string/title_activity_cpp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DatabasActivity"
+            android:label="@string/title_activity_databas"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

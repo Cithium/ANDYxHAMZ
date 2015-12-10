@@ -13,37 +13,20 @@
     tools:showIn="@layout/activity_java"
     android:background="@drawable/background">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Back"
-        android:id="@+id/back"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="73dp" />
-
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="44dp">
+        android:layout_marginBottom="150dp">
 
-        <Button
-            android:layout_width="125dp"
-            android:layout_height="wrap_content"
-            android:text="Övningar"
-            android:id="@+id/ovningar"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="35dp" />
 
         <Button
             android:layout_width="125dp"
             android:layout_height="wrap_content"
             android:text="Ex-Tentor"
-            android:id="@+id/extentor"
+            android:id="@+id/javagextentor"
             android:layout_row="1"
             android:layout_column="0"
             android:layout_marginLeft="25dp"
@@ -52,19 +35,19 @@
         <Button
             android:layout_width="125dp"
             android:layout_height="wrap_content"
-            android:text="Seminarier"
-            android:id="@+id/seminarier"
+            android:text="Föreläsningar"
+            android:id="@+id/javagforelasningar"
             android:layout_row="0"
-            android:layout_column="1"
+            android:layout_column="0"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="35dp" />
 
         <Button
             android:layout_width="125dp"
             android:layout_height="wrap_content"
-            android:text="Laboratoner"
-            android:id="@+id/labb"
-            android:layout_row="1"
+            android:text="Inlämningar"
+            android:id="@+id/javaginlamningar"
+            android:layout_row="0"
             android:layout_column="1"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="35dp" />

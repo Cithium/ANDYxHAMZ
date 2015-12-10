@@ -9,55 +9,57 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.hamza.andyxhamz.MainActivity"
-    tools:showIn="@layout/activity_main"
-    android:id="@+id/homePage"
+    tools:context="com.example.hamza.andyxhamz.CPPActivity"
+    tools:showIn="@layout/activity_cpp"
     android:background="@drawable/background">
 
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="150dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/gridLayout">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="170dip">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
-            android:text="Java Grundkurs"
-            android:id="@+id/javaGrund"
+            android:text="Föreläsning"
+            android:id="@+id/cppforelasningar"
             android:layout_row="0"
             android:layout_column="0"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="10dp" />
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="35dp" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
-            android:text="Java Fortsättning."
-            android:id="@+id/javaForts"
+            android:text="Inlämning"
+            android:id="@+id/cppinlamningar"
             android:layout_row="1"
             android:layout_column="0"
-            android:layout_marginTop="10dp" />
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="35dp" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
-            android:text="C++"
-            android:id="@+id/cpp"
+            android:text="Laboration"
+            android:id="@+id/cpplaboration"
             android:layout_row="0"
             android:layout_column="1"
-            android:layout_marginTop="10dp" />
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="35dp" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
-            android:text="Databas"
-            android:id="@+id/databas"
+            android:text="Tentamen"
+            android:id="@+id/cpptentamen"
             android:layout_row="1"
             android:layout_column="1"
-            android:layout_marginTop="10dp" />
-
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="35dp" />
     </GridLayout>
+
 </RelativeLayout>

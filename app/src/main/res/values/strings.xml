@@ -5,4 +5,7 @@
     <string name="button_text">IDA14</string>
     <string name="title_activity_second">SecondActivity</string>
     <string name="title_activity_java">JavaActivity</string>
+    <string name="title_activity_java_forts">JavaFortsActivity</string>
+    <string name="title_activity_cpp">CPPActivity</string>
+    <string name="title_activity_databas">DatabasActivity</string>
 </resources>
