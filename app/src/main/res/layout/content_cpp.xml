@@ -11,15 +11,16 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.hamza.andyxhamz.CPPActivity"
     tools:showIn="@layout/activity_cpp"
-    android:background="@drawable/background">
+    android:background="#ffffff">
 
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:id="@+id/gridLayout2"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/imageView2"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="170dip">
+        android:background="#ffffff">
 
         <Button
             android:layout_width="125dp"
@@ -48,7 +49,6 @@
             android:id="@+id/cpplaboration"
             android:layout_row="0"
             android:layout_column="1"
-            android:layout_marginLeft="25dp"
             android:layout_marginRight="35dp" />
 
         <Button
@@ -58,8 +58,18 @@
             android:id="@+id/cpptentamen"
             android:layout_row="1"
             android:layout_column="1"
-            android:layout_marginLeft="25dp"
             android:layout_marginRight="35dp" />
     </GridLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/background"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/gridLayout2"
+        android:layout_alignParentEnd="true"
+        android:background="#ffffff" />
 
 </RelativeLayout>
