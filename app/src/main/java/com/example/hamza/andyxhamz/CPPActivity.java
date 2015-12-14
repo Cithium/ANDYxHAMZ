@@ -17,8 +17,6 @@ public class CPPActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cpp);
-        getActionBar().setTitle("Hello world App");
-        getSupportActionBar().setTitle("Hello world App");
 
         Button cppForelasningarButton = (Button) findViewById(R.id.cppforelasningar);
         cppForelasningarButton.setOnClickListener(new Button.OnClickListener() {
